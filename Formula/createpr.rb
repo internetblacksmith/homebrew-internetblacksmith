@@ -5,20 +5,20 @@
 class Createpr < Formula
   desc ""
   homepage ""
-  version "0.4.0"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/internetblacksmith/createpr/releases/download/v0.4.0/createpr_Darwin_x86_64.tar.gz"
-      sha256 "f14afa3fd61b8ac569503d69824b1ba556ed1af28ae536af2a33d9c612bf8737"
+      url "https://github.com/internetblacksmith/createpr/releases/download/v0.4.1/createpr_Darwin_x86_64.tar.gz"
+      sha256 "4fb7885686c032633e7dbbdc8585452b4137fb411654b638ebfdc9f59318a8a7"
 
       def install
         bin.install "createpr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/internetblacksmith/createpr/releases/download/v0.4.0/createpr_Darwin_arm64.tar.gz"
-      sha256 "24ae4cb63192362bd548b6cb0abd096cf802593151f13ce733574b1f524e97bb"
+      url "https://github.com/internetblacksmith/createpr/releases/download/v0.4.1/createpr_Darwin_arm64.tar.gz"
+      sha256 "56a804e99146a5d8544e62fc22bd372f98bfdbeca97d3c4834934d036da7108a"
 
       def install
         bin.install "createpr"
@@ -29,8 +29,8 @@ class Createpr < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/internetblacksmith/createpr/releases/download/v0.4.0/createpr_Linux_x86_64.tar.gz"
-        sha256 "2f57f01139c821d2d821cd1253ca9c00ab013615d605b3a5f2ad037460257640"
+        url "https://github.com/internetblacksmith/createpr/releases/download/v0.4.1/createpr_Linux_x86_64.tar.gz"
+        sha256 "b95bf13ccb41722b80c958808308c50e185b39d64b8e81c7df84fb2afaa9078d"
 
         def install
           bin.install "createpr"
@@ -39,8 +39,8 @@ class Createpr < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/internetblacksmith/createpr/releases/download/v0.4.0/createpr_Linux_arm64.tar.gz"
-        sha256 "327c98ef3163fec8db2ee7d9e4898b662652e8edd7453a388d60b2cb3dd5c886"
+        url "https://github.com/internetblacksmith/createpr/releases/download/v0.4.1/createpr_Linux_arm64.tar.gz"
+        sha256 "f02e3c36ee058d592bc75bdf1ddaa3d444dd324407c14bb306c99f7df469fef2"
 
         def install
           bin.install "createpr"
